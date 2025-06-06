@@ -5,7 +5,7 @@ import tailwind from 'tailwind';
 const useCartTabOptions = (cart) => {
     const [value, setValue] = useState({
         tabBarBadge: cart instanceof Cart ? cart.getAttribute('total_unique_items') : 0,
-        tabBarBadgeStyle: tailwind('bg-blue-500 ml-1'),
+        tabBarBadgeStyle: tailwind('bg-primary ml-1'),
     });
 
     const setCartTabOptions = (cart) => {

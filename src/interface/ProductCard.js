@@ -19,7 +19,7 @@ const ProductCard = ({ product, onPress, containerStyle }) => {
                     <View style={tailwind('mb-1.5 flex flex-row items-center')}>
                         <Text style={tailwind('font-semibold')}>{translate(product, 'name')}</Text>
                         {product.getAttribute('is_service') === true && (
-                            <Text style={tailwind('ml-1 text-blue-500 font-semibold')}>{translate('components.interface.ProductCard.serviceIndicator')}</Text>
+                            <Text style={tailwind('ml-1 text-accent font-semibold')}>{translate('components.interface.ProductCard.serviceIndicator')}</Text>
                         )}
                     </View>
                     {product.getAttribute('is_available') === false && (
