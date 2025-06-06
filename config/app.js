@@ -10,3 +10,4 @@ import { configure } from './defaults';
 const AppConfig = configure('AppConfig', {});
 
 export default AppConfig;
+
