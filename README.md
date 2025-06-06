@@ -250,6 +250,13 @@ These options can be used to customize the design and look of your StorefrontApp
 
 For interface config please reference the file `/config/defaults.js` to view options.
 
+### Custom Color Palette
+
+You can extend Tailwind's color palette from `tailwind.config.js`.
+The app includes the colors **primary**, **secondary** and **accent** which map to
+`bg-primary`, `text-secondary`, and `text-accent` utility classes. Use these
+classes in components to keep styles consistent.
+
 ### Internationalization and Translations
 
 Baked in by default StorefrontApp support internationalization and app translations. Internationalization starts from when you configure your store or network from within the Storefront extension in the [Fleetbase Console](https://console.fleetbase.io/). Read below for getting started with internationalization and translations.

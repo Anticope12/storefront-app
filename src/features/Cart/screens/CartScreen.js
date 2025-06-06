@@ -57,8 +57,8 @@ const RenderEmptyCartView = ({ onShopForMore }) => (
                 <Text style={tailwind('w-52 text-center text-gray-600 font-semibold')}>{translate('Cart.CartScreen.emptyStateSubtitle')}</Text>
             </View>
             <TouchableOpacity style={tailwind('w-full')} onPress={() => invoke(onShopForMore)}>
-                <View style={tailwind('flex items-center justify-center rounded-md px-8 py-2 bg-white border border-blue-500 shadow-sm')}>
-                    <Text style={tailwind('font-semibold text-blue-500 text-lg')}>{translate('Cart.CartScreen.goToBrowserButtonText')}</Text>
+                <View style={tailwind('flex items-center justify-center rounded-md px-8 py-2 bg-white border border-primary shadow-sm')}>
+                    <Text style={tailwind('font-semibold text-primary text-lg')}>{translate('Cart.CartScreen.goToBrowserButtonText')}</Text>
                 </View>
             </TouchableOpacity>
         </View>
@@ -67,7 +67,7 @@ const RenderEmptyCartView = ({ onShopForMore }) => (
 
 const RenderCartItemActions = ({ item, index, onRemoveFromCart, onEditCartItem }) => (
     <View style={tailwind('flex flex-1 items-center bg-white flex-1 flex-row justify-end')}>
-        <TouchableOpacity onPress={() => invoke(onEditCartItem, item)} style={tailwind('flex bg-blue-500 w-28 h-full items-center justify-center')}>
+        <TouchableOpacity onPress={() => invoke(onEditCartItem, item)} style={tailwind('flex bg-primary w-28 h-full items-center justify-center')}>
             <View>
                 <FontAwesomeIcon icon={faPencilAlt} size={22} style={tailwind('text-white')} />
             </View>
